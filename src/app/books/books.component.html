@@ -1,0 +1,15 @@
+<li class="d-flex flex-column text-center mx-4">
+  <img
+    src="{{ book.images }}"
+    alt="{{ book.name }}"
+    width="auto "
+    height="auto"
+    class="mt-4"
+  />
+
+  <p class="bookname">
+    {{ book.name | titlecase }} by {{ book.author | titlecase }}
+  </p>
+  <p>{{ +1 }}</p>
+  <button class="w-50">Add to Cart</button>
+</li>

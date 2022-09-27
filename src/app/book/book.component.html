@@ -1,0 +1,12 @@
+<h1>Programming books</h1>
+
+<!-- <button (click)="isdistale = !isdistale">
+  <ng-container *ngIf="isdistale"> hide Books</ng-container>
+  <ng-container *ngIf="!isdistale"> Show Books</ng-container>
+</button> -->
+
+<ul *ngIf="isdistale" class="d-flex flex-wrap">
+  <ng-container *ngFor="let singlebook of books; let i = index">
+    <app-books [book] = "singlebook" ></app-books>
+  </ng-container>
+</ul>
