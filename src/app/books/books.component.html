@@ -11,5 +11,5 @@
     {{ book.name | titlecase }} by {{ book.author | titlecase }}
   </p>
   <p>{{ +1 }}</p>
-  <button class="w-50">Add to Cart</button>
+  <button class="w-50" (click)="addToCart()">Add to Cart</button>
 </li>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { BOOKS } from 'src/types/books';
 
 let i = 1;
 
@@ -35,6 +35,7 @@ export class BookComponent implements OnInit {
         'https://images-na.ssl-images-amazon.com/images/I/51fRKyqPWDL.jpg',
     },
   ];
+  cart: BOOKS[] = []
 
   isdistale = true;
 
@@ -43,4 +44,9 @@ export class BookComponent implements OnInit {
   ngOnInit(): void {}
 
   names: string = 'asdas';
+
+  addToCart(event:any){
+    console.log(event);
+    
+  }
 }

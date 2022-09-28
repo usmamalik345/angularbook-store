@@ -7,6 +7,6 @@
 
 <ul *ngIf="isdistale" class="d-flex flex-wrap">
   <ng-container *ngFor="let singlebook of books; let i = index">
-    <app-books [book] = "singlebook" ></app-books>
+    <app-books (emitBOOKS)="addToCart($event)"  [book] = "singlebook" ></app-books>
   </ng-container>
 </ul>
